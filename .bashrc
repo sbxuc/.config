@@ -12,6 +12,8 @@ alias cl='clear'
 alias ff='fastfetch'
 alias cm='cmus'
 alias ssn='sudo shutdown now'
+alias sp='sudo pacman -S'
+
 sch() {
     # Поисковая система
     local SEARCH_ENGINE="https://www.google.com/search?q="
