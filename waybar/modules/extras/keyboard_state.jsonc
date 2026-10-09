@@ -1,0 +1,11 @@
+{
+	"keyboard-state": {
+		"format": " {icon}",
+		"format-icons": {
+			"locked": "AA",
+			"unlocked": "aa"
+		},
+		"capslock": true,
+		"binding-keys": [ 1, 58 ]
+	}
+}
