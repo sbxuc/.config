@@ -1,0 +1,13 @@
+{
+	"backlight": {
+		"format": "{icon} {percent}%",
+		"format-icons": [
+			"", "", "", "", "", "", "", "", ""
+		],
+		"max-length": 7,
+		"min-length": 7,
+		"on-scroll-up": "~/.config/waybar/scripts/backlight up",
+		"on-scroll-down": "~/.config/waybar/scripts/backlight down",
+		"tooltip-format": "Screen Brightness"
+	}
+}

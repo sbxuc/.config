@@ -1,0 +1,149 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 15px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #1e1e2e;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+/* Контейнер для всех воркспейсов */
+#workspaces {
+    background-color: #1a1b26; /* Темный фон под цвет темы Tokyo Night */
+    border-radius: 4px;
+    margin: 5px;
+    padding: 0 5px;
+}
+
+/* Общий стиль для каждой кнопки-ромбика */
+#workspaces button {
+    padding: 0 8px;
+    color: #565f89;            /* Приглушенный серый цвет для неактивных */
+    background-color: transparent;
+    font-size: 11px;           /* Маленький размер для аккуратности */
+    transition: all 0.3s ease; /* Плавная анимация смены цветов */
+    border: none;
+    box-shadow: none;
+}
+
+/* Эффект при наведении курсора мыши */
+#workspaces button:hover {
+    color: #bb9af7;            /* Фиолетовый отсвет */
+    background-color: #1a1b26;
+    border-radius: 4px;
+}
+
+/* Стиль для текущего АКТИВНОГО воркспейса */
+#workspaces button.active {
+    color: #7aa2f7;            /* Яркий синий цвет */
+    font-size: 14px;           /* Ромбик становится чуть крупнее */
+    font-weight: bold;
+}
+
+/* Если на воркспейсе есть открытые окна (но ты не на нем) */
+#workspaces button.visible {
+    color: #7aa2f7;            /* Аккуратный зеленый цвет */
+}
+
+/* Стиль для воркспейса с важным уведомлением (например, мигает Discord) */
+#workspaces button.urgent {
+    color: #f7768e;            /* Аварийный красный */
+    background-color: #1a1b26;
+    border-radius: 4px;
+}
+
+#custom-power_profile,
+#custom-wallpaper,
+#window,
+#clock,
+#pulseaudio,
+#network,
+#workspaces,
+#tray
+
+#backlight {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#tray {
+    background-color: #1a1b26; /* Темный фон, как у воркспейсов и часов */
+    border-radius: 8px;        /* Скругление углов */
+    padding: 0 10px;           /* Внутренние боковые отступы */
+    margin: 5px 4px;           /* Поля сверху/снизу для выравнивания в ряд */
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;     /* Слегка приглушает неактивные иконки */
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #f7768e; /* Подсветка красным, если пришло уведомление */
+    border-radius: 4px;
+}
+
+#workspaces {
+    background: #1e1e2e;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#custom-power_profile {
+    color: #a6e3a1;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#window {
+    background-color: #1a1b26; /* Добавим аккуратный фон, как у часов */
+    color: #7aa2f7;            /* Цвет текста */
+    border-radius: 4px;
+    padding: 0 12px;           /* Внутренние отступы, чтобы текст не лип к краям */
+    margin: 5px 0px;           /* Центрирование по вертикали */
+}
+
+#clock {
+    background-color: #1a1b26; /* Темный фон в тон воркспейсам */
+    color: #7aa2f7;            /* Ваш приятный персиковый цвет текста */
+    border-radius: 8px;        /* Одинаковое скругление со всех четырех сторон */
+    padding: 0 14px;           /* Внутренние отступы, чтобы текст не прилипал к краям */
+    margin: 5px 0px;           /* Отступы сверху и снизу для центрирования по вертикали */
+    font-weight: bold; 
+    font-size: 15px;         /* Делает время более читаемым */
+}
+
+#network {
+    background-color: #1a1b26;
+    color: #7aa2f7;
+    padding: 0 10px;
+    margin: 5px 3px;
+    border-radius: 4px;
+/*    min-width: 140px;*/ /* Фиксирует ширину, чтобы панель не дергалась при изменении скорости */
+}
+
+#pulseaudio, #cpu, #memory, #temperature {
+    background-color: #1a1b26;
+    color: #7aa2f7;
+    padding: 0 10px;
+    margin: 5px 3px;
+    border-radius: 4px;
+}
+#temperature.critical {
+    background-color: #f7768e;
+    color: #1a1b26;
+    font-weight: bold;
+}
